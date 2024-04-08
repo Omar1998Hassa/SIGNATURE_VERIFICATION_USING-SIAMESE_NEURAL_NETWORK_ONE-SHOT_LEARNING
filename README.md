@@ -4,15 +4,22 @@
 This repository contains code for a signature verification model developed using deep learning techniques. The model is trained to classify whether pairs of signatures belong to the same person or not.
 
 ## Table of Contents
-
+- [Dataset](#Dataset)
 - [Training Loop Outputs](#training-loop-outputs)
 - [Plotting Metrics](#plotting-metrics)
 - [Encoder Extraction](#encoder-extraction)
 - [Classify Images](#classify-images)
 - [Model Metrics](#model-metrics)
+- [Output](#Output)
 - [Usage](#usage)
 - [Requirements](#requirements)
-- [License](#license)
+
+## Dataset
+
+The image below shows a sample of the dataset on which the model was trained on.
+
+![image](https://github.com/Omar1998Hassa/SIGNATURE_VERIFICATION_USING-SIAMESE_NEURAL_NETWORK_ONE-SHOT_LEARNING/assets/39214394/773b2368-b6ba-4b51-bb23-73350f17016c)
+
 
 ## Training Loop Outputs
 
@@ -33,6 +40,12 @@ The `classify_images` function computes the distance between the encodings of tw
 ## Model Metrics
 
 The `ModelMetrics` function computes and prints model accuracy and plots the confusion matrix based on the true and predicted classifications.
+
+## Output
+
+The confusion matrix produced after training for 128 shows that there is a 2.5% false positive when the model is applied on the test data.
+![image](https://github.com/Omar1998Hassa/SIGNATURE_VERIFICATION_USING-SIAMESE_NEURAL_NETWORK_ONE-SHOT_LEARNING/assets/39214394/d75f4bec-4099-4fdf-95ea-f016c67ebf92)
+
 
 ## Usage
 
